@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { CartProvider } from './context/CartContext';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import ProductGrid from './components/ProductGrid';
+import Cart from './components/Cart';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+export default function App() {
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <div className="app-wrapper">
+        <NavBar onCartOpen={() => setCartOpen(true)} />
+        <main>
+          <Hero />
+          <ProductGrid />
+        </main>
+        <Footer />
+        <Cart show={cartOpen} onHide={() => setCartOpen(false)} />
+      </div>
+    </CartProvider>
   );
 }
-
-export default App;

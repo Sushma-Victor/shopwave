@@ -1,0 +1,241 @@
+.cart-canvas {
+  width: 400px !important;
+  max-width: 95vw;
+}
+
+.cart-header {
+  border-bottom: 1px solid #f3f4f6 !important;
+  padding: 1.2rem 1.4rem !important;
+}
+
+.cart-title {
+  font-family: var(--font-display) !important;
+  font-weight: 800 !important;
+  font-size: 1.15rem !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-count-badge {
+  background-color: var(--accent) !important;
+  color: #111 !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+}
+
+.cart-body {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Empty state */
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cart-empty-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.cart-empty-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 0.4rem;
+}
+
+.cart-empty-sub {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* Cart content scroll area */
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+/* Cart item */
+.cart-item {
+  border: none !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  padding: 1rem 1.4rem !important;
+}
+
+.cart-item-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.cart-item-emoji {
+  font-size: 2.1rem;
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--dark);
+  line-height: 1.3;
+}
+
+.cart-item-unit {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.78rem;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color var(--transition), background var(--transition);
+}
+
+.cart-item-remove:hover {
+  color: #ef4444;
+  background: #fef2f2;
+}
+
+.cart-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Qty control */
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1.5px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.qty-control button {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--dark);
+  transition: background var(--transition);
+}
+
+.qty-control button:hover {
+  background: var(--light);
+}
+
+.qty-control span {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-left: 1.5px solid #e5e7eb;
+  border-right: 1.5px solid #e5e7eb;
+  height: 30px;
+  line-height: 30px;
+}
+
+.cart-item-subtotal {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+/* Summary */
+.cart-summary {
+  margin: 1.2rem 1.4rem 0;
+  padding-top: 1rem;
+}
+
+.cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.free-ship {
+  color: var(--accent2);
+  font-weight: 700;
+}
+
+.cart-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0.8rem 0;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+/* Buttons */
+.checkout-btn {
+  display: block;
+  width: calc(100% - 2.8rem);
+  margin: 1.2rem 1.4rem 0;
+  background-color: var(--accent) !important;
+  border: none !important;
+  color: #111 !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 0.7rem !important;
+  border-radius: var(--radius-sm) !important;
+  transition: transform var(--transition), box-shadow var(--transition) !important;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(245,158,11,0.3) !important;
+}
+
+.clear-cart-btn {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 0.75rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.clear-cart-btn:hover {
+  color: #ef4444;
+}

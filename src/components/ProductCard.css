@@ -1,0 +1,122 @@
+.product-card {
+  border: none !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+  height: 100%;
+  background: var(--white);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Image area */
+.product-img-area {
+  background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-emoji {
+  font-size: 4.5rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+  transition: transform var(--transition);
+}
+
+.product-card:hover .product-emoji {
+  transform: scale(1.1);
+}
+
+.product-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(17, 24, 39, 0.75);
+  color: #e5e7eb;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 50px;
+}
+
+/* Body */
+.product-body {
+  padding: 1.1rem 1.2rem 1.2rem !important;
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+/* Stars */
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 0.9rem;
+}
+
+.stars {
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.reviews {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+/* Footer row */
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-price {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+/* Add button */
+.add-btn {
+  background-color: var(--dark) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  padding: 0.4rem 0.9rem !important;
+  transition: background var(--transition), transform var(--transition) !important;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background-color: #1f2937 !important;
+  transform: scale(1.04);
+}
+
+.add-btn--added {
+  background-color: var(--accent2) !important;
+}
+
+.add-btn:disabled {
+  opacity: 1 !important;
+  cursor: default;
+}
