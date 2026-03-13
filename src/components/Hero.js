@@ -1,7 +1,7 @@
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import './Hero.css';
 
-export default function Hero() {
+export default function Hero({ onSignup }) {
   const scrollToProducts = () => {
     document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -28,8 +28,8 @@ export default function Hero() {
               <Button className="btn-primary-custom" onClick={scrollToProducts}>
                 Shop Now →
               </Button>
-              <Button className="btn-ghost-custom" href="#features">
-                Learn More
+              <Button className="btn-ghost-custom" onClick={onSignup}>
+                Sign Up Free
               </Button>
             </div>
           </Col>

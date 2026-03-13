@@ -3,9 +3,11 @@
   padding: 0.85rem 0;
   transition: box-shadow var(--transition);
 }
+
 .site-navbar.scrolled {
-  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
+
 .navbar-brand-custom {
   font-family: var(--font-display);
   font-weight: 800;
@@ -16,7 +18,12 @@
   align-items: center;
   gap: 6px;
 }
-.brand-icon { color: var(--accent); font-size: 1.1rem; }
+
+.brand-icon {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
 .nav-links .nav-link {
   color: #d1d5db !important;
   font-weight: 500;
@@ -25,13 +32,26 @@
   border-radius: var(--radius-sm);
   transition: color var(--transition), background var(--transition);
 }
+
 .nav-links .nav-link:hover {
   color: var(--accent) !important;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
-.custom-toggler { border-color: #374151 !important; padding: 4px 8px; }
-.custom-toggler .navbar-toggler-icon { filter: invert(1); }
-.cart-btn-wrap { position: relative; }
+
+.custom-toggler {
+  border-color: #374151 !important;
+  padding: 4px 8px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Cart Button */
+.cart-btn-wrap {
+  position: relative;
+}
+
 .cart-btn {
   background-color: transparent !important;
   border: 1.5px solid #374151 !important;
@@ -44,20 +64,49 @@
   padding: 0.4rem 1rem;
   transition: border-color var(--transition), background var(--transition) !important;
 }
+
 .cart-btn:hover {
   border-color: var(--accent) !important;
-  background: rgba(245,158,11,0.08) !important;
+  background: rgba(245, 158, 11, 0.08) !important;
 }
+
 .cart-icon { font-size: 1rem; }
+
 .cart-badge {
   background-color: var(--accent) !important;
   color: #111 !important;
   font-weight: 800 !important;
   font-size: 0.68rem !important;
   position: absolute;
-  top: -8px; right: -10px;
-  min-width: 20px; height: 20px;
+  top: -8px;
+  right: -10px;
+  min-width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ── Nav actions group ───────────────────────────────────────── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ── Sign Up button ──────────────────────────────────────────── */
+.signup-btn {
+  background-color: var(--accent, #f59e0b) !important;
+  border: none !important;
+  color: #111 !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-sm, 8px) !important;
+  padding: 0.4rem 1.1rem !important;
+  font-size: 0.88rem !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.signup-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(245,158,11,0.35) !important;
 }

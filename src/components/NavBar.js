@@ -3,7 +3,7 @@ import { Navbar, Nav, Container, Button, Badge } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import './NavBar.css';
 
-export default function NavBar({ onCartOpen }) {
+export default function NavBar({ onCartOpen, onSignup }) {
   const { totalItems } = useCart();
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,14 +22,17 @@ export default function NavBar({ onCartOpen }) {
             <Nav.Link href="#products">Products</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
           </Nav>
-          <div className="cart-btn-wrap">
-            <Button className="cart-btn" onClick={onCartOpen}>
-              <span className="cart-icon">🛒</span>
-              <span>Cart</span>
-              {totalItems > 0 && (
-                <Badge className="cart-badge" pill>{totalItems}</Badge>
-              )}
-            </Button>
+          <div className="nav-actions">
+            <Button className="signup-btn" onClick={onSignup}>Sign Up</Button>
+            <div className="cart-btn-wrap">
+              <Button className="cart-btn" onClick={onCartOpen}>
+                <span className="cart-icon">🛒</span>
+                <span>Cart</span>
+                {totalItems > 0 && (
+                  <Badge className="cart-badge" pill>{totalItems}</Badge>
+                )}
+              </Button>
+            </div>
           </div>
         </Navbar.Collapse>
       </Container>
