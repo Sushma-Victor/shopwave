@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+ShopWave 🛍️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ShopWave is a front-end e-commerce web app built with React. It gives users a modern online storefront experience — browsing products and signing up for an account — all wrapped in a clean, responsive UI.
 
-## Available Scripts
+Note: This project currently includes a signup form on the front end. It is not yet connected to a backend/database, so accounts are not persisted.
+
+Features
+Responsive storefront UI built with React and React-Bootstrap
+User signup form
+Component-based architecture for easy extension (product listings, cart, checkout, etc.)
+Tech Stack
+React (Create React App)
+React-Bootstrap for UI components
+CSS for custom styling
+Getting Started
+
+This project was bootstrapped with Create React App.
+
+Prerequisites
+Node.js (v16 or later recommended)
+npm (comes with Node.js)
+Installation
+bash
+git clone https://github.com/Sushma-Victor/shopwave.git
+cd shopwave
+npm install
+Running Locally
+bash
+npm start
+
+Runs the app in development mode. Open http://localhost:3000 to view it in your browser. The page reloads automatically when you make changes, and lint errors (if any) will show in the console.
+
+Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+Command	Description
+npm start	Runs the app in development mode at localhost:3000
+npm test	Launches the test runner in interactive watch mode
+npm run build	Builds the app for production to the build folder, minified and optimized
+npm run eject	Copies all config files and dependencies into the project for full control (⚠️ one-way operation)
+Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app is deployed on Vercel. To deploy your own copy:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Fork or clone this repo
+Import it into Vercel (or Netlify)
+Vercel will auto-detect the Create React App setup — build command npm run build, output directory build
+Deploy, and you'll get a live shareable link
 
-### `npm test`
+For more general deployment options, see the CRA deployment docs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Roadmap
+ Connect signup form to a backend/database
+ Add product catalog and detail pages
+ Shopping cart functionality
+ Checkout flow
+Learn More
+Create React App documentation
+React documentation
+License
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project currently has no license specified.
